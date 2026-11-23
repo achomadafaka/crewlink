@@ -1,0 +1,4 @@
+{"claude": ["Lead"],
+ "gpt": ["Builder"],
+ "command": "crew",
+ "project_root": "~/code/myproject"}

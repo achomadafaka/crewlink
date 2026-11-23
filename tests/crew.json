@@ -1,0 +1,5 @@
+{"claude": ["Alpha", "Beta", "Lambda", "Gamma"],
+ "gpt": ["Codex", "Delta", "Epsilon", "Zeta"],
+ "command": "sniper-crew",
+ "state_dir": "~/.cache/sniper-crew",
+ "project_root": "~/code/sniper"}
