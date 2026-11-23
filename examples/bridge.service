@@ -1,0 +1,15 @@
+# Copy to ~/.config/systemd/user/<command>-bridge.service and replace <command>.
+[Unit]
+Description=crewlink bridge for <command>
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/<command> serve --saved-context
+Environment="PATH=%h/.npm-global/bin:%h/.local/bin:/usr/local/bin:/usr/bin:/bin"
+Restart=on-failure
+RestartSec=2
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
